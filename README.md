@@ -31,11 +31,45 @@ This website serves as our corporate presence and client gateway, showcasing our
 
 ## Key Features
 
-- Modern, responsive UI built with React + TypeScript
-- Serverless contact form on Vercel using Nodemailer (Zoho SMTP)
+### Website Experience
+- Hero-led homepage with clear primary/secondary calls-to-action
+- Services overview cards with hover interactions
+- “Why Choose Us” highlights and experience stats
+- Client testimonials section
+- CTA banner for lead generation
+- Responsive navigation with desktop + mobile menu states
+- Branded footer with quick links, service list, contact info, and social links
+
+### Core Pages
+- **Home**: Hero, services overview, value proposition, testimonials, and CTA
+- **About**: Company story, mission, vision, values, and leadership approach
+- **Services**: Category-based service catalog with direct contact inquiry links
+- **Training**: Programs, learning features, and mentorship details
+- **Contact**: Contact cards + form for direct inquiries
+
+### Contact & Email Flow
+- Contact form with validation and honeypot spam prevention
+- Serverless mail handler with Zoho SMTP (Nodemailer)
+- Admin notification email with full request details
+- Customer acknowledgement email with generated ticket ID
+
+### Performance & Platform
 - Optimized performance with Vite and code-splitting
-- SEO-friendly metadata and clean routing
+- Clean routing via React Router
 - HTTPS via Vercel and Cloudflare
+- SEO-friendly metadata and modern UI components (shadcn/ui + Tailwind CSS)
+
+---
+
+## Screenshots
+
+### Homepage
+
+![Eldeetech homepage](Eldeetech%20Homepage.jpg)
+
+### Autoresponse Email (Ticket Confirmation)
+
+![Eldeetech autoresponse email with ticket ID](Auto%20mail%20edeetech%20response.png)
 
 ---
 
@@ -78,4 +112,3 @@ Environment Variables (Project Settings → Environment Variables):
 - optional: ZOHO_SMTP_HOST, ZOHO_SMTP_PORT, TO_PRIMARY, TO_CC, EMAIL_TZ, EMAIL_FOOTER_IMAGE_URL
 
 API route `/api/send-mail` is implemented at `eldeetech/api/send-mail.js` and deploys automatically as a Vercel Function.
-
