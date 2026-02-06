@@ -39,6 +39,18 @@ This website serves as our corporate presence and client gateway, showcasing our
 
 ---
 
+## Screenshots
+
+### Homepage
+
+![Eldeetech homepage](Eldeetech%20Homepage.jpg)
+
+### Autoresponse Email (Ticket Confirmation)
+
+![Eldeetech autoresponse email with ticket ID](Auto%20mail%20edeetech%20response.png)
+
+---
+
 ## Local Development
 
 From the repository root:
@@ -78,4 +90,3 @@ Environment Variables (Project Settings → Environment Variables):
 - optional: ZOHO_SMTP_HOST, ZOHO_SMTP_PORT, TO_PRIMARY, TO_CC, EMAIL_TZ, EMAIL_FOOTER_IMAGE_URL
 
 API route `/api/send-mail` is implemented at `eldeetech/api/send-mail.js` and deploys automatically as a Vercel Function.
-
